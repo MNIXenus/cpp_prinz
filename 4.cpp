@@ -13,4 +13,4 @@ int main()
     cout << "Value of 27 = " << hex << 27 << " hexadecimal"
          << endl; // Output: 1b hexadecimal
     return 0;
-} 
+}
