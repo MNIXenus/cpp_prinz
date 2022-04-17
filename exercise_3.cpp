@@ -1,76 +1,62 @@
+/*
+//1
+// gets a number and calculates its square root
 #include <iostream>
+#include <cmath>
+#include <cstdlib>
 using namespace std;
 
 
-//1 - Write a C++ program that displays the memory space required by each
-// fundamental type on screen.
-
 int main()
 {
-    const bool boolVar                      = false;
-    const char charVar                      = 'A'; 
-    const signed char signedCharVar         = -12;
-    const unsigned char unsignedCharVar     = 12;
-    const wchar_t wchar_tVar                = "S";
-    const short shortVar                    = 32767;
-    const unsigned short unsignedShortVar   = 65535;
-    const int intVar                        = 2147483647;
-    const unsigned int unsignedIntVar       = 4294496295;
-    const long longVar                      = 2147483647;
-    const unsigned long unsignedLong        = 4294496295;
-    const float floatVar                    = 3.4E+38;
-    const double doubleVar                  = 1.7E+308;
-    const long double longDoubleVar         = 1.1E+4932;
-
-    cout << "type           size      " << endl
-         << "bool                     "     << sizeof(boolVar) << endl
-         << "char                     "     << sizeof(charVar) << endl
-         << "signed char              "     << sizeof(signedCharVar) << endl
-         << "unsigned char            "     << sizeof(unsignedCharVar) << endl
-         << "wchar_t                  "     << sizeof(wchar_tVar) << endl
-         << "short                    "     << sizeof(shortVar) << endl
-         << "unsigned short           "     << sizeof(unsignedShortVar) << endl
-         << "int                      "     << sizeof(intVar) << endl
-         << "unsigned int             "     << sizeof(unsignedIntVar) << endl
-         << "long                     "     << sizeof(longVar) << endl
-         << "unsigned long            "     << sizeof(unsignedLong) << endl
-         << "float                    "     << sizeof(floatVar) << endl
-         << "double                   "     << sizeof(doubleVar) << endl
-         << "long double              "     << sizeof(longDoubleVar) << endl;
-    
-    return 0;
-}
-
-/*
-// 2
-int main()
-{
-    cout << "       I"                          << endl
-         << "               \"RUSH\""           << endl
-         << "                           \"TO\"" << endl
-         << "       /FRO/"                      << endl;
+    string input;
+    cout << "Insert a number: " << endl;
+    cin >> input;
+    cout << "square root of " << input << " is " << sqrt(atof(input.c_str()));
 
     return 0;
 }
 */
 
+
 /*
-// 3
-const long LARGE = 5;
+//2
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
 
 int main()
 {
-    int a(2.5);
-    int b = '?';
-    // char z(500);
-    int big = 4e+5;
-    // double he's(1.2e+5);
-    char c('\'');
-    unsigned size(4e+5);
-    float val = 12345.12345;
+    string message("Learn from your mistakes!");
+    cout << message << endl;
 
-    cout << LARGE << a << b << big << c << size << val;
+    int len = message.length();
+    cout << "Length of the string: " << len << endl;
+
+    int b;
+    srand(12);
+    b = rand();
+    cout << "Random number: " << b << endl;
+
+    return 0; 
+}
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string mainStr("I have learned something new again!");
+    string inpStr1, inpStr2;
+    cout << "string \"" << mainStr << "\" contains " << mainStr << " symbols" << endl;
+    cout << "insert first string" << endl;
+    getline(cin, inpStr1);
+    cout << "insert second string" << endl;
+    getline(cin, inpStr2);
+    cout << "concatenated strings are: " << endl << inpStr1 + " * " + inpStr2;
 
     return 0;
 }
-*/
