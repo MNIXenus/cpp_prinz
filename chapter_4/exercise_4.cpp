@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 /* //2
@@ -14,26 +15,68 @@ int main()
     return 0;
 } */
 
+// //3
+// int main()
+// {
+//     int articleNumber, numberOfPieces;
+//     float PricePerPiece;
+
+//     cout << "\nInsert Article Number" << endl;
+//     cin >> articleNumber;
+//     cin.sync();
+//     cin.clear();
+//     cout << "\nInsert Number of Pieces" << endl;
+//     cin >> numberOfPieces;
+//     cin.sync();
+//     cin.clear();
+//     cout << "\nPrice per piece" << endl;
+//     cin >> PricePerPiece;
+//     cin.sync();
+//     cin.clear();
+
+//     cout << "\nArtice Number    Number of pieces    Proce per piece" << endl;
+//     cout << articleNumber << "  " << numberOfPieces << "    " << PricePerPiece << " Dollar";
+
+//     return 0;
+// }
+
+/* //4
 int main()
 {
-    int articleNumber, numberOfPieces;
-    float PricePerPiece;
-
-    cout << "\nInsert Article Number" << endl;
-    cin >> articleNumber;
-    cin.sync();
-    cin.clear();
-    cout << "\nInsert Number of Pieces" << endl;
-    cin >> numberOfPieces;
-    cin.sync();
-    cin.clear();
-    cout << "\nPrice per piece" << endl;
-    cin >> PricePerPiece;
+    int ch_code;
+    cin >> ch_code;
     cin.sync();
     cin.clear();
 
-    cout << "\nArtice Number    Number of pieces    Proce per piece" << endl;
-    cout << articleNumber << "  " << numberOfPieces << "    " << PricePerPiece << " Dollar";
+    cout << "char:" << (char)ch_code << endl;
+    cout << "dec: " << dec << ch_code << endl;
+    cout << "oct: " << oct << ch_code << endl;
+    cout << "hex: " << hex << ch_code << endl;
+
+    return 0;
+    
+} */
+
+
+//5
+int main()
+{
+    char ch;
+
+    cout << "Let's go! Press the <return> key" << endl;
+    cout << "Enter a word containing three characters at most: ";
+    
+    
+    for (int i = 0; i < 3; i++)
+    {
+
+        cin >> ch;
+        if (i==0)
+        {
+            cout << "Your input: ";
+        }
+        cout << ch;
+    }
 
     return 0;
 }
