@@ -58,7 +58,7 @@ int main()
 } */
 
 
-//5
+/* //5
 int main()
 {
     char ch;
@@ -80,5 +80,5 @@ int main()
 
     return 0;
 }
-
+ */
 
